@@ -63,10 +63,7 @@
 }
 
 
-.about-container {
-  padding: 1rem;
-  text-align: center !important;
-}
+
 
 .user-img1 {
   height: 5rem;
@@ -92,7 +89,10 @@ a {
 
 
 /* about */
+
 .about-container {
+  padding: 1rem;
+  text-align: center !important;
   z-index: 100;
   width: 25%;
   float: right;
@@ -101,16 +101,21 @@ a {
 }
 
 .about-container .about-name {
-  border-bottom: 1px solid grey !important;
+  border-bottom: 1px solid rgb(177, 175, 175) !important;
   margin-bottom: 1rem;
   font-size: 1rem;
+}
+
+.about-email {
+  color: grey;
 }
 
 .about-container a {
   cursor: pointer;
 }
 
-.about-container span {
+.about-btn {
+  cursor: pointer;
   background-color: red;
   border: none;
   color: white;

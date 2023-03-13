@@ -6,9 +6,9 @@ const About = ({ user }) => {
         <img src={user.profilepicture} alt="profile picture" className="user-img1" />
         <div className="about-name">
             <p>{user.name}</p>
-            <p>{user.email}</p>
+            <p className="about-email">{user.email}</p>
         </div>
-        <Link to="/"><span>Sign Out</span></Link>
+        <Link to="/"><span className="about-btn">Sign Out</span></Link>
     </div>
 };
 
