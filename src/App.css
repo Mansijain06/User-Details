@@ -125,12 +125,13 @@ a {
   padding: 0.8rem 1.5rem;
 }
 
+
 /* chat */
 
 .chat {
   position: absolute;
   right: 2rem;
-  bottom: -10rem;
+  bottom: 0rem;
   width: 20%;
   float: right;
 }

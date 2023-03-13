@@ -37,7 +37,7 @@ const Profile = () => {
                     </div>
                     <div>
                         <label>Phone : </label>
-                        <span>{user?.phone}</span>
+                        <span>{user?.phone.slice(0, 12).replaceAll('-', '')}</span>
                     </div>
                     <div>
                         <label>Website : </label>

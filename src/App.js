@@ -45,7 +45,6 @@ function App() {
 
   useEffect(() => {
     getUsers();
-    console.log(users);
   }, []);
 
   async function getUsers() {
