@@ -13,7 +13,7 @@
 }
 
 .landing-container {
-  width: 45%;
+  width: 40%;
   /* height: 15rem; */
   box-shadow: rgba(75, 74, 74, 0.35) 0px 5px 15px;
   border-radius: 1.5rem;
@@ -25,17 +25,19 @@
 }
 
 .landing-list {
-  height: 20%;
+  height: 25rem;
   overflow: scroll;
+  font-size: 1.2rem;
 }
 
 .landing-container>h3 {
   background-color: rgb(237, 232, 232);
-  color: rgb(67, 65, 65);
+  color: rgb(50, 48, 48);
   font-weight: normal;
   padding: 2rem;
   border-top-right-radius: 1.5rem;
   border-top-left-radius: 1.5rem;
+  text-align: center;
 }
 
 .landing-container>ul>li {
@@ -48,7 +50,11 @@
   font-size: 1.1rem;
 }
 
-.landing-list {}
+.landing-list li {
+  display: flex;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgb(204, 202, 202);
+}
 
 .user-img {
   height: 2rem;
@@ -56,8 +62,108 @@
   margin: 0 1rem;
 }
 
+
+.about-container {
+  padding: 1rem;
+  text-align: center !important;
+}
+
+.user-img1 {
+  height: 5rem;
+  border-radius: 50%;
+}
+
 a {
   text-align: left;
   color: black !important;
   text-decoration: none;
+}
+
+.post-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: rgba(210, 204, 204, 0.617);
+}
+
+
+
+/* about */
+.about-container {
+  z-index: 100;
+  width: 25%;
+  float: right;
+  line-height: 2rem;
+  box-shadow: rgba(75, 74, 74, 0.35) 0px 5px 15px;
+}
+
+.about-container .about-name {
+  border-bottom: 1px solid grey !important;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.about-container a {
+  cursor: pointer;
+}
+
+.about-container span {
+  background-color: red;
+  border: none;
+  color: white;
+  border-radius: 2rem;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.8rem 1.5rem;
+}
+
+/* chat */
+
+.chat {
+
+  width: 20%;
+  float: right;
+}
+
+.chat-container {
+  display: inline;
+  color: white !important;
+  /* margin: -5rem 2rem; */
+  box-shadow: rgba(75, 74, 74, 0.35) 0px 5px 15px;
+  background-color: rgb(28, 167, 222);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat-container p {
+  align-items: center;
+  padding: 1rem;
+
+}
+
+.chat-container p span {
+  color: white !important;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+.chat-main {
+  z-index: 100;
+  background-color: white;
+  list-style: none;
+}
+
+.chat-main span {
+  margin: 1rem 0;
+}
+
+.chat-list {
+  display: flex;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 2rem;
 }

@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom";
 import { useContext } from 'react';
 import UserContext from "../utils/UserContext";
+import "./Profile.css"
 
 const SideBar = () => {
     const { profileId } = useContext(UserContext);

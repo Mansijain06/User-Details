@@ -63,7 +63,7 @@ const Profile = () => {
             </div>
             <div className="profile-address">
                 <p>Address:</p>
-                <div>
+                <div className="profile-address-details">
                     <div>
                         <label>Street : </label>
                         <span>{userAddress?.street}</span>
