@@ -13,7 +13,6 @@ const Profile = () => {
     const user = users[param.id - 1];
     const userCompany = user?.company;
     const userAddress = user?.address;
-    console.log(userAddress);
 
     useEffect(() => {
         setProfileId(param.id)

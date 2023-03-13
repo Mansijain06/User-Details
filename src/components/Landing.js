@@ -5,7 +5,6 @@ import UserContext from '../utils/UserContext';
 const Landing = () => {
 
     const { users } = useContext(UserContext);
-    console.log(users)
 
     return (
         <div className="landing-container">

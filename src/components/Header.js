@@ -7,8 +7,6 @@ const Header = ({ user }) => {
     const showAboutHandler = () => {
         setShowAbout(prevState => !prevState);
     }
-    console.log(showAbout);
-
 
     return (
         <>

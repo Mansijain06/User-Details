@@ -8,7 +8,6 @@ const About = ({ user }) => {
             <p>{user.name}</p>
             <p>{user.email}</p>
         </div>
-        <div></div>
         <Link to="/"><span>Sign Out</span></Link>
     </div>
 };

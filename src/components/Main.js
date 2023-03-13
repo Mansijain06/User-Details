@@ -15,7 +15,6 @@ const Main = () => {
     const showChatHandler = () => {
         setShowChat(prevState => !prevState);
     }
-    console.log(showChat);
 
     return (
         <>
