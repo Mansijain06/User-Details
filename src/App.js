@@ -7,6 +7,8 @@ import Profile from './components/Profile';
 
 
 import { USERS_API_URL } from "./const";
+import Post from './components/Post';
+import Main from './components/Main';
 
 const appRouter = createBrowserRouter([
   {
@@ -14,14 +16,32 @@ const appRouter = createBrowserRouter([
     element: <Landing />
   },
   {
-    path: '/profile/:id',
-    element: <Profile />
-  }
-
+    path: '/main',
+    element: <Main />,
+    children: [
+      {
+        path: 'profile/:id',
+        element: <Profile />
+      },
+      {
+        path: 'post',
+        element: <Post />,
+      },
+      {
+        path: 'gallery',
+        element: <Post />
+      },
+      {
+        path: 'todo',
+        element: <Post />
+      }
+    ]
+  },
 ])
 
 function App() {
   const [users, setUsers] = useState([]);
+  const [profileId, setProfileId] = useState(1);
 
   useEffect(() => {
     getUsers();
@@ -33,7 +53,7 @@ function App() {
     setUsers(jsonData.users);
   }
   return (
-    <UserContext.Provider value={{ users: users }}>
+    <UserContext.Provider value={{ users: users, profileId: profileId, setProfileId: setProfileId }}>
       <div className="App">
         <header className="App-header">
           <RouterProvider router={appRouter} />
